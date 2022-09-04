@@ -16,7 +16,8 @@ header {
     height: 500px;
     background: url('../img/header.png');
     background-repeat: no-repeat; /* 백그라운드 반복 금지 */
-    background-position: center ;
+    background-position: center;
+    background-size: cover;
 }
 .header_top {
     display: flex;
@@ -113,6 +114,9 @@ li.active a:after, .gnb li:hover a:after {
     color:#252525;
     line-height: 1;
 }
+.s1 div a:hover {
+    font-weight: 600;
+}
 .s1 div .tv a:nth-child(1){
     font-size: 30px;
     font-weight: 600;
@@ -129,12 +133,18 @@ li.active a:after, .gnb li:hover a:after {
     display: block;
     color: #000;
 }
-.s1_icons a img { width: 200px }
+.s1_icons a img { 
+    width: 200px;
+    transition: .4s;
+}
 .s1_icons p {
     margin-top: 10px;
     font-size: 14px;
 }
 
+.s1_icons a img:hover{
+    scale: 1.1;
+}
 /* s2 */
 section { }
 section.s2 > h2 { 
@@ -150,6 +160,12 @@ section.s2 > h2 {
     text-align: center;
     padding-top: 50px;
     
+}
+.s2 > div img{
+    transition: .4s;
+}
+.s2 > div img:hover {
+    scale: 1.1;
 }
 .s2_txt { padding-top: 10px;}
 .s2_txt strong {}
@@ -171,7 +187,7 @@ section.s2 > h2 {
 }
 .s3_notice {
     position: relative;
-    padding: 50px 10px 0 0;
+    padding: 70px 10px 0 0;
     width: 500px;
 }
 .s3_notice p {
@@ -199,12 +215,18 @@ section.s2 > h2 {
     text-decoration: underline;
 }
 .s3_cont {
-    padding: 50px 0 0 10px;
+    padding: 70px 0px 0 10px;
     display: flex;
 }
-.s3_cont img{border-radius: 20px;}
+.s3_cont img{
+    border-radius: 20px;
+    transition: .4s;
+}
+.s3_cont img:hover{
+    scale: 1.1;
+}
 .s3_cont > div {}
-.s3_cont > div:nth-child(2) { margin: 0 20px; }
+.s3_cont > div:nth-child(2) { margin: 0 30px; }
 .s3_cont > div:nth-child(2) img:nth-child(1) { margin-bottom: 20px; }
 .s3_cont > div:last-child {}
 
@@ -228,17 +250,24 @@ section.s2 > h2 {
 .s4 {
     margin: 110px auto;
     overflow: hidden;
+    
 }
 .s4 h2 {}
 .s4 ul {}
 .s4 a { 
     float: left;
-    padding: 20px 0 0 10px;
+    padding: 20px 10px 0 10px;
+    
 }
 .s4 img { 
-    padding-bottom: 10px;
-    width: 230px;
+    margin-bottom: 30px;
+    width: 220px;
     border-radius: 20px;
+    transition: .4s;
+    
+}
+.s4 img:hover{
+    scale: 1.1;
 }
 .s4 p:nth-child(2) { 
     font-size: 18px; 
